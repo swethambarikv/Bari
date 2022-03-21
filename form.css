@@ -1,0 +1,9 @@
+input[type=text] {
+    border: 2px solid black;
+   
+}
+.wrapper{
+    font-size: larger;
+    font-style: normal;
+    font-weight: bold;
+}
