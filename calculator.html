@@ -1,0 +1,35 @@
+<html>  
+  <body>
+        <fieldset style="width:280px">
+          <legend>Calculator Demo Using Arrow Function:</legend>
+                        
+                Number1:<input type="text" id="txtFirstNumber" /><br><br>
+                Number2:<input type="text" id="txtSecondNumber" /><br><br>
+                <input type="button" id="btnADD" value="Addition"/>
+                <input type="button" id="btnSUB" value="Subtraction"/><br><br>
+                <input type="button" id="btnMUL" value="Multiplication"/>
+                <input type="button" id="btnDIV" value="Division"/>                             
+        </fieldset>    
+               
+   </body>
+   <script>
+       function Operation(operand) 
+{ 
+                                
+
+        var firstValue = parseInt(document.getElementById('txtFirstNumber').value);
+        var secondValue = parseInt(document.getElementById('txtSecondNumber').value);                           
+        var result = 0;
+        switch(operand)
+        {
+
+case '+' :      result = ( (x, y) => {  return x + y; } )( firstValue, secondValue );break;
+case '-' :      result = ( (x, y) => {  return x - y; } )( firstValue, secondValue );break;
+case '*' :      result = ( (x, y) => {  return x * y; } )( firstValue, secondValue );break;
+case '/' :      result = ( (x, y) => {  return x / y; } )( firstValue, secondValue );break;
+        }
+                                
+   alert(result);
+}
+   </script>
+</html>
