@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">  
     <title>Dictionary App in JavaScript</title>
@@ -55,7 +55,7 @@
   </body>
 </html>
 
-/* Import Google Font - Poppins */
+---------------------------------script.css-----------------------------------------------------
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{
   margin: 0;
@@ -207,7 +207,7 @@ ul .content::-webkit-scrollbar{
   margin-right: 5px;
   text-decoration: underline;
 }
-
+------------script.js-----------------------------
 const wrapper = document.querySelector(".wrapper"),
 searchInput = wrapper.querySelector("input"),
 volume = wrapper.querySelector(".word i"),
