@@ -1,0 +1,117 @@
+body{
+    background-color: rgb(208, 0, 250);
+}
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+header{
+    height: 118px;
+    text-align: left;
+    padding-left: 5px;;
+
+}
+nav{
+    background-color: rgb(208, 0, 250);
+    height: 40px;
+    text-align: right;
+}
+.dropbtn {
+    background-color: rgb(208, 0, 250);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+/*.dropbtn1 {
+    background-color: rgb(208, 0, 250);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropbtn2 {
+    background-color: rgb(208, 0, 250);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropbtn3 {
+    background-color: rgb(208, 0, 250);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+  .dropbtn4 {
+    background-color: rgb(208, 0, 250);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+  .dropbtn5 {
+    background-color: rgb(208, 0, 250);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+  .dropbtn6 {
+    background-color: rgb(208, 0, 250);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+  .dropbtn7 {
+    background-color: rgb(208, 0, 250);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+  .dropbtn8 {
+    background-color: rgb(208, 0, 250);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}*/
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a:hover {background-color: whitesmoke;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: rgb(208, 0, 250)}
+main{
+
+    text-align: center;
+    /*background-color: orange;*/
+    height: 400px;
+    padding-top: 25px;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
