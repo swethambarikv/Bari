@@ -1,0 +1,64 @@
+body{  
+  font-family: Calibri; 
+  background-image: url("download.jpg");
+  background-size: fill;
+  background-color: whitesmoke;
+  
+}  
+input[type="textarea"]{
+  width: 250px;
+  height: 50px;
+}
+input[type="text"] {  
+  width: 250px;  
+  height: 35px;
+}
+select {
+  width: 150px;
+  margin: 10px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+select:focus {
+  min-width: 150px;
+  width: auto;
+}  
+input[type="tel"]{
+  width: 250px;  
+  height: 35px;
+}
+input[type="submit"], input[type="reset"] {  
+  width: 77px;  
+  height: 30px;  
+  position: relative;left: 180px;  
+} 
+.wrapper{
+  font-size: 20px;
+  font-family: sans-serif;
+  opacity: 0.3;
+  height: 50px;
+} 
+form{  
+  text-align: center;  
+  font-family: Calibri;  
+  font-size: 20px;  
+  border: 3px solid black;  
+  width: 600px;  
+  margin: 20px auto;  
+  font-size: 30px;
+  background-color: gray;
+}  
+td {  
+  padding: 10px;  
+}  
+td:first-child {  
+  text-align: right;  
+  font-weight: bold;  
+}  
+td:last-child {  
+  text-align: left;  
+}
+header{
+  background-color: gray;
+}
