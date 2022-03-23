@@ -2,7 +2,7 @@
 <html>
 <head>
 <title> Login Form</title>
-<link rel="stylesheet" href="form2.css">
+<link rel="stylesheet" href="loginform.css">
 </head>
 <body>
 <form>
