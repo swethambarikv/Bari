@@ -1,0 +1,111 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    /*background-image: url('pro4/pro4.png');
+    background-position: top;*/
+    background-color: rebeccapurple;
+}
+.header{
+    border: 1px black;
+    margin: auto;
+    padding: 10px;
+    max-width: 600px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: palevioletred;
+
+}
+/*.header1 h2{
+    margin: auto;
+    font-size: 35px;
+    color: black;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rebeccapurple;
+    text-align: center;
+}*/
+header h2{
+    font-family: 'Merriweather', serif;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    background-color: palevioletred;
+    height: 60px;
+    border: 1px black;
+    margin: auto;
+    padding: 10px;
+    max-width: 600px;
+    font-size: 30px;
+}
+.header2 h1{
+    margin: auto;
+    font-size: 40px;
+    margin: auto;
+    color: black;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rebeccapurple;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+.container{
+    border: 1px black;
+    margin: auto;
+    padding: 10px;
+    max-width: 600px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+
+}
+form{
+    margin-top: 15px;
+}
+input[type=text] {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    width: 500px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px black;
+    font-size: 18px;
+    margin-right: 100px;
+}
+input[type=tel] {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    width: 500px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 3px red;
+    border-color: red;
+    font-size: 18px;
+    margin-right: 100px;
+}
+input[type=date] {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    width: 500px;
+    padding: 15px;
+    padding-left: 25px;
+    border-radius: 20px;
+    border: 1px black;
+    font-size: 15px;
+    margin-right: 100px;
+
+
+}
+input[type=submit]{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px black;
+    background: purple;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    resize: none;
+}
