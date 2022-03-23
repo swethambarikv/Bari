@@ -2,8 +2,42 @@
 <html>    
 <head>    
     <title>Reg Form</title> 
-    <link rel="stylesheet" href="index.css">   
-    
+    <link rel="stylesheet" href="project6.css">   
+    <script>
+    function validate() {  
+    var fname = document.reg_form.fname;  
+    var lname = document.reg_form.lname; 
+    var address=document.reg_form.address;
+    var email=document.reg_form.email;
+    var mobile=document.reg_form.mobile;
+
+    if (fname.value.length <= 0) {  
+        alert("Name is required");  
+        fname.focus();  
+        return false;  
+    }  
+    if (lname.value.length <= 0) {  
+        alert("Last Name is required");  
+        lname.focus();  
+        return false;  
+    } 
+    if (address.value.length <= 0) {  
+        alert("Address is required");  
+        address.focus();  
+        return false;  
+    } 
+    if (email.value.length <= 0) {  
+        alert("Email is required");  
+        email.focus();  
+        return false;  
+    } 
+    if (mobile.value.length <= 0) {  
+        alert("Number is required");  
+        mobile.focus();  
+        return false;  
+    }  
+} 
+    </script>
 </head>    
 <body> 
     <header>
@@ -77,6 +111,6 @@
             </tr>             
         </table>    
     </form>  
-    <script src="index.js"></script>
+    <script src="project6.js"></script>
 </body>    
 </html>     
