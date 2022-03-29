@@ -4,8 +4,8 @@
 			function Operation(operand) { 
 				
 
-				var firstValue = parseInt(document.getElementById('txtFirstNumber').value);
-				var secondValue = parseInt(document.getElementById('txtSecondNumber').value);				
+				var firstValue = parseInt(document.getElementById('FirstNumber').value);
+				var secondValue = parseInt(document.getElementById('SecondNumber').value);				
 				var result = 0;
 				switch(operand){
 
@@ -28,8 +28,8 @@
 		<fieldset style="width:280px">
 			<legend>Calculator Demo Using Arrow Function:</legend>
 			
-					Number1:<input type="text" id="txtFirstNumber" /><br><br>
-					Number2:<input type="text" id="txtSecondNumber" /><br><br>
+					Number1:<input type="text" id="FirstNumber" /><br><br>
+					Number2:<input type="text" id="SecondNumber" /><br><br>
 					<input type="button" id="btnADD" value="Addition" onclick="Operation('+')" />
 					<input type="button" id="btnSUB" value="Subtraction" onclick="Operation('-')"/><br><br>
 					<input type="button" id="btnMUL" value="Multiplication" onclick="Operation('*')"/>
