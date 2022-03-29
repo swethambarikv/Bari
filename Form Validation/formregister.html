@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="formregister.css">   <!--Including CSS Section-->
+</head>
+<body>
+    <!--HTML Section-->
+    <div class="form-container">
+        <div>
+            <h1>Registration Form</h1>
+            <h2><u>Fill the Details</u></h2>
+        </div>
+        <form class="form">
+                <label><b>First Name</b></label>
+                <input type="text" id="firstname" placeholder="Enter your First Name" >
+                <span id="fnameError"></span>
+                
+                <label><b>Last Name</b></label>
+                <input type="text" id="lastname" placeholder="Enter your Last Name">
+                <span id="lnameError"></span>
+
+                <label><b>Email</b></label>
+                <input type="email" id="email" placeholder="Enter your Email">
+                <span id="emailError"></span>
+
+                <label name="phone"><b>Phone No</b></label>
+                <input type="tel" placeholder="Enter phone number" id="phoneNumber"  ><br>
+                <span id="phoneError"></span>
+
+                <table>
+                <tr>
+                <td><label for="gender" id="gender"><b>Gender</b></label> </td>
+          
+                <td><input type="radio" id="male" value="male" ></td>
+                <td><label for="male">Male</label></td>
+          
+                <td><input type="radio" id="female" value="female"></td>
+                <td><label for="female">Female</label></td><br>
+
+                <td><input type="radio"  id="others" value="others"></td>
+                <td><label for="others">Others</label></td><br>
+                </tr>
+                </table>
+                <span id="genderError"></span>
+         
+                <label for="course" ><b>Course</b></label>
+                <select  id="course" >
+                    <option hidden>Choose the course</option>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                    <option>React</option>
+                    <option>Angular</option>
+                </select>
+                <span id="courseError"></span>
+                
+                <label for="date1" name="date1"><b>Date</b></label>
+                <input type="date" id="date1" ><br>
+                <span id="dateError"></span>
+            
+                <button type="submit" id="submit" >Submit</button>
+        
+        </form>
+    </div>
+</body>
+<script src="formregister.js"></script> 
+</html>
