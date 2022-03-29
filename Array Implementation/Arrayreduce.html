@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<style>
+h1{
+    font-size: 50px;
+}    
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: beige;
+        text-align: center;
+        padding-top: 50px;
+        font-size: 25px;
+    }
+</style>
+<body>
+<h1>JavaScript Arrays</h1>
+<p>JavaScript Array reduce() </p>
+<p id="demo"></p>
+<script>
+const numbers = [250, 50, 25];
+document.getElementById("demo").innerHTML = numbers.reduce(myFunc);
+function myFunc(total, num) {
+  return total - num;
+}
+
+</script>
+</body>
+</html>
