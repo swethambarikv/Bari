@@ -7,7 +7,7 @@
 
 <p touchend="sample1()">Touching this content and then releasing the touch, will trigger the function. </p>
 
-<p><strong>Note:</strong> This example is for touch devices only.</p>
+<p>This example is for touch devices only.</p>
 
 <p id="demo"></p>
 
