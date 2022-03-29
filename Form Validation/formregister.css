@@ -1,0 +1,134 @@
+/*CSS Section*/
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color:lightgreen;
+    font-family: sans-serif;
+    width: 100%;
+    margin:50px;
+    padding: 10px 500px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.form-container
+{
+    background-color:lavender ;
+    border:solid 1px;
+    width: 700px;
+    padding: auto;
+}
+
+h1
+{
+    background-color:lightskyblue;
+    padding: 20px 10px ;
+    text-align:center;
+}
+
+h2
+{
+    padding: 10px ;
+    margin-bottom:0px;
+    text-align:center;
+}
+
+.form 
+{
+    padding: 30px 50px;
+}
+
+.elements
+{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+label
+{
+    
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding-top:40px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+label[for=male]
+{
+    
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding-left:10px;
+    padding-top: 10px;
+    padding-right:30px;
+}
+label[for=female]
+{
+    
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding-left:10px;
+    padding-top:10px;
+    padding-right:30px;
+}
+label[for=others]
+{
+    
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding-left:10px;
+    padding-top: 10px;
+}
+label[for=gender]
+{
+    
+    font-size: 20px;
+    margin-bottom: 0px;
+    padding-top: 8px;
+    padding-right:40px;
+}
+input
+{
+    border:solid 4px #fff;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px; 
+}
+
+select
+{
+    border:solid 4px #fff;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+}
+span
+{
+    padding: 6px 0 4px;
+    position:absolute;
+    display: block;
+    color: red;
+}
+button
+{
+    background-color:rgb(97, 97, 226) ;
+    border:solid 2px rgb(97, 97, 226);
+    color: white;
+    font-size: 17px;
+    margin-top:60px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+[type=radio] {
+    width: 16px;
+}
