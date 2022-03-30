@@ -1,0 +1,23 @@
+html>
+<body>
+
+<h1>Asynchronus function</h1>
+<h2>The setTimeout() and clearTimeout() Methods</h2>
+<button onclick="myStopFunction()">Stop!</button>
+
+<h2 id="demo"></h2>
+
+<script>
+const myTimeout = setTimeout(myGreeting, 5000);
+
+function myGreeting() {
+  document.getElementById("demo").innerHTML = "Hello World!!!"
+}
+
+function myStopFunction() {
+  clearTimeout(myTimeout);
+}
+</script>
+
+</body>
+</html>
