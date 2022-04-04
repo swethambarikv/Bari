@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Iterables</h2>
+<p>Home Made Iterable:</p>
+<p id="demo"></p>
+<script>
+function myNumbers() {
+  let n = 0;
+  return {
+    next: function() {
+      n += 20;
+      return {value:n, done:false};
+    }
+  };
+}
+const n = myNumbers();
+n.next(); 
+n.next(); 
+n.next(); 
+document.getElementById("demo").innerHTML = n.next().value;
+</script>
+</body>
+</html>
