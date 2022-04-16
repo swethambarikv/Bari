@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        body {
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: aquamarine;
+        }
+
+        input[type=month] {
+            margin-left: 15px;
+            padding-left: 25px;
+            padding-top: 15px;
+            padding-right: 25px;
+
+        }
+
+        select {
+            margin-left: 100px;
+        }
+
+        #pre1 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 25px;
+        }
+
+        #next1 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label><b>Graduation:</b></label><br>
+            <select name="graduation" id="graduation" multiple>
+                <option>Choose the option</option>
+                <option value="btech">Btech</option>
+                <option value="be">B.E</option>
+                <option value="arts&science">Arts & Science</option>
+                <option value="commerce">Commerce</option>
+            </select>
+        </div><br>
+        <div>
+            <label><b>Year of Passing:</b></label>
+            <input type="month" id="passing" name="passing" placeholder="Enter the year of Passing">
+
+        </div> <br>
+        <div>
+            <button type="submit" id="pre1">Previous</button>
+            <button type="submit" id="next1">Next</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

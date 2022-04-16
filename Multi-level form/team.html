@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+</head>
+<style>
+    body {
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: aquamarine;
+    }
+
+    input[type=checkbox] {
+        font-style: initial;
+    }
+
+    #department {
+        margin-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: bisque;
+    }
+
+    #pre3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 25px;
+    }
+
+    #next3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 25px;
+    }
+</style>
+
+<body>
+    <form>
+        <div>
+            <label>Department:</label>
+            <select name="department" id="department">
+                <option>Choose the option</option>
+                <option value="lamp">LAMP</option>
+                <option value="dotnet">Dot Net</option>
+                <option value="oracle">Oracle</option>
+                <option value="bfs">BFS</option>
+                <option value="eba">EBA</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" id="check" name="check">
+            <label for="check"> I have agreed to the Terms & Condition</label><br>
+        </div><br>
+        <div>
+            <button type="submit" id="pre3">Previous</button>
+            <button type="submit" id="next3">Done</button>
+        </div>
+    </form>
+</body>
+
+</html>
