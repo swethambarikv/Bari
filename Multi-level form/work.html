@@ -14,29 +14,25 @@
         }
 
         input[type=radio] {
-            margin-left: 85px;
+            margin-left: 100px;
+
 
         }
 
         input[type=text] {
             margin-left: 25px;
+            padding-top: 25px;
+            padding-bottom: 25px;
 
         }
-
-        #pre4 {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
+        .container{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
             margin-left: 25px;
-        }
-
-        #next4 {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
-            margin-left: 25px;
+            display: inline-block;
+            
         }
     </style>
 </head>
@@ -54,13 +50,16 @@
             <label>Others</label><br>
         </div><br>
         <div>
-            <label><b>Overall year of<br> Experience: </b></label>
+            <label><b> Overall year of Experience: </b></label>
             <input type="text" id="exp" name="experience" placeholder="Enter the experience">
         </div><br>
-        <div>
-            <button type="submit" id="pre4">Previous</button>
-            <button type="submit" id="next4">Next</button>
-        </div>
+        <div class="container">                
+            <ul class="pager">
+              <li class="previous"><a href="others.html">Prev</a></li>
+              <li class="next"><a href="education.html">Next</a></li>
+            </ul>
+        
+    </div>
     </form>
 
 </body>
