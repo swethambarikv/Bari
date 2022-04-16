@@ -25,22 +25,16 @@
         padding-bottom: 15px;
         background-color: bisque;
     }
-
-    #pre3 {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 25px;
+    .container{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 25px;
+            display: inline-block;
+            
     }
-
-    #next3 {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 25px;
-    }
+   
 </style>
 
 <body>
@@ -58,11 +52,13 @@
         </div>
         <div>
             <input type="checkbox" id="check" name="check">
-            <label for="check"> I have agreed to the Terms & Condition</label><br>
+            <label for="check"> I have agreed to the Terms & Conditions</label><br>
         </div><br>
-        <div>
-            <button type="submit" id="pre3">Previous</button>
-            <button type="submit" id="next3">Done</button>
+        <div class="container">                
+            <ul class="pager">
+              <li class="previous"><a href="education.html">Prev</a></li>
+              <li class="next"><a href="thanks.html">Next</a></li>
+            </ul>
         </div>
     </form>
 </body>
