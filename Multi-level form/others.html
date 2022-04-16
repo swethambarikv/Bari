@@ -63,7 +63,7 @@
 
         }
 
-        #pre {
+        /*#pre {
             padding-top: 10px;
             padding-bottom: 10px;
             padding-left: 10px;
@@ -93,6 +93,15 @@
             padding-left: 10px;
             padding-right: 10px;
             margin-left: 25px;
+        }*/
+        .container{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 25px;
+            display: inline-block;
+            
         }
     </style>
 </head>
@@ -134,9 +143,15 @@
             <label><b>Mobile Number:</b></label>
             <input type="number" id="phone" placeholder="Enter the Mobile Number"><br>
         </div> <br>
-        <div>
+        <!--<div>
             <button type="submit" id="pre2">Prev</button>
             <button type="submit" id="next2">Next</button>
+        </div>-->
+        <div class="container">                
+            <ul class="pager">
+              <li class="previous"><a href="basics.html">Prev</a></li>
+              <li class="next"><a href="work.html">Next</a></li>
+            </ul>
         </div>
     </form>
 
