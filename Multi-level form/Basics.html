@@ -43,6 +43,15 @@
         font-family: 'Times New Roman', Times, serif;
         font-weight: bold;
     }
+    .container{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 25px;
+            display: inline-block;
+            
+        }
 </style>
 
 <body>
@@ -54,13 +63,18 @@
         <input type="password" id="pass1" placeholder="Password"><br>
         <label><b>Conform Password:</b></label><br>
         <input type="password" id="pass2" placeholder="Re-Enter Password"> <br>
-        <span id="message" style="color:red"> </span> <br><br>
+        <span id="message" style="color:red"> </span> 
         <label><b>First Name:</b></label><br>
         <input type="text" id="fname" placeholder="Enter your First Name"> <br>
         <label><b>Last Name:</b></label><br>
         <input type="text" id="lname" placeholder="Enter your Last Name"> <br>
         <br>
-        <button type="submit" id="next"">Next</button>
+        <div class="container">                
+            <ul class="pager">
+              <!--<li class="previous"><a href="basics.html">Prev</a></li>-->
+              <li class="next"><a href="others.html">Next</a></li>
+            </ul>
+        </div>
 </body>
 <script>
 function validateBasics(){
@@ -125,9 +139,7 @@ function validateBasics(){
             alert("Password created successfully");
         }
     }
-    function next() {
-        window.location.href = "file:///D:/Aspire/visual%20studio/Assignment/others.html";
-    }
+    
 </script>
 
 </html>
