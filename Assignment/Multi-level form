@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+</head>
+<style>
+    body {
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: aquamarine;
+    }
+
+    input[type=text] {
+        margin-left: 75px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    input[type=password] {
+        margin-left: 70px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    button[type=submit] {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 25px;
+
+    }
+    h1{
+        font-size: 75px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <h1>Employee Registration</h1>
+    <form method="post" action="#" name="form1" onclick="validateBasics();">
+        <label><b>Email:</b></label><br>
+        <input type="text" id="email" name="email" placeholder="Email Eg:abc@gmail.com"><br>
+        <label><b>Password:</b></label><br>
+        <input type="password" id="pass1" placeholder="Password"><br>
+        <label><b>Conform Password:</b></label><br>
+        <input type="password" id="pass2" placeholder="Re-Enter Password"> <br>
+        <span id="message" style="color:red"> </span> <br><br>
+        <label><b>First Name:</b></label><br>
+        <input type="text" id="fname" placeholder="Enter your First Name"> <br>
+        <label><b>Last Name:</b></label><br>
+        <input type="text" id="lname" placeholder="Enter your Last Name"> <br>
+        <br>
+        <button type="submit" id="next"">Next</button>
+</body>
+<script>
+function validateBasics(){
+    validateEmail();
+    validate();
+    verifyPassword();
+    matchPassword();
+    next();
+
+}
+    function validateEmail(email) {
+
+        var email = document.getElementById('email');
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+        if (!filter.test(email.value)) {
+            alert('Please provide a valid email address');
+            email.focus;
+            return false;
+        }
+    }
+    function validate(name) {
+        var regName = /^[A-Za-z]+$/;
+        var name = document.getElementById('fname').value;
+        if (!regName.test(fname)) {
+            alert('Please enter your full name (first & last name).');
+            document.getElementById('fname').focus();
+            return false;
+        } else {
+            alert('Valid name given.');
+            return true;
+        }
+    }
+    function verifyPassword() {
+        var pw = document.getElementById("pass1").value;
+        //check empty password field  
+        if (pw == "") {
+            document.getElementById("message").innerHTML = "**Fill the password please!";
+            return false;
+        }
+
+        //minimum password length validation  
+        if (pw.length < 8) {
+            document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";
+            return false;
+        }
+
+        //maximum length of password validation  
+        if (pw.length > 15) {
+            document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";
+            return false;
+        } else {
+            alert("Password is correct");
+        }
+    }
+    function matchPassword() {
+        var pw1 = document.getElementById("pass11");
+        var pw2 = document.getElementById("pass2");
+        if (pw1 != pw2) {
+            alert("Passwords did not match");
+        } else {
+            alert("Password created successfully");
+        }
+    }
+    function next() {
+        window.location.href = "file:///D:/Aspire/visual%20studio/Assignment/others.html";
+    }
+</script>
+
+</html>
