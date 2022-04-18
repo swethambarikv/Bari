@@ -8,10 +8,11 @@
     <title>Employee Registration</title>
 </head>
 <style>
+    
     body {
         font-size: 20px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: aquamarine;
+        background-color: burlywood
     }
 
     input[type=text] {
@@ -39,9 +40,10 @@
 
     }
     h1{
-        font-size: 75px;
+        font-size: 50px;
         font-family: 'Times New Roman', Times, serif;
         font-weight: bold;
+        margin-left: 100px;
     }
     .container{
             padding-top: 30px;
@@ -56,7 +58,7 @@
 
 <body>
     <h1>Employee Registration</h1>
-    <form method="post" action="#" name="form1" onclick="validateBasics();">
+    <form method="post" action="#" name="form1" onclick="return validateBasics()">
         <label><b>Email:</b></label><br>
         <input type="text" id="email" name="email" placeholder="Email Eg:abc@gmail.com"><br>
         <label><b>Password:</b></label><br>
@@ -78,11 +80,11 @@
 </body>
 <script>
 function validateBasics(){
-    validateEmail();
-    validate();
-    verifyPassword();
-    matchPassword();
-    next();
+   return  validateEmail();
+   return  validate();
+   return verifyPassword();
+   return matchPassword();
+   return next();
 
 }
     function validateEmail(email) {
@@ -110,19 +112,14 @@ function validateBasics(){
     }
     function verifyPassword() {
         var pw = document.getElementById("pass1").value;
-        //check empty password field  
         if (pw == "") {
             document.getElementById("message").innerHTML = "**Fill the password please!";
             return false;
         }
-
-        //minimum password length validation  
         if (pw.length < 8) {
             document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";
             return false;
         }
-
-        //maximum length of password validation  
         if (pw.length > 15) {
             document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";
             return false;
