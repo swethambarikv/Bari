@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registeration</title>
+    <link rel="stylesheet" type="text/css" href="assignment.css">
+</head>
+<body>
+    <header><h1>Employee Registeration Form</h1></header>
+    <div class="container">
+    <!--Basics-->
+    <form class="form active" name="form1" id="form1" >
+       
+        <label><b>Email:</b></label><br>
+        <input type="text" id="email" name="email" placeholder="Eg:abc@gmail.com" onblur="validateEmail()"><br>
+        <label><b>Password:</b></label><br>
+        <input type="password" id="pass1" placeholder="Password" onblur="verifyPassword()"><div id="pass"></div><br>
+        <label><b>Conform Password:</b></label><br>
+        <input type="password" id="pass2" placeholder="Re-Enter Password" onblur="matchPassword()"><div id="cpass"><br>
+        <label><b>First Name:</b></label><br>
+        <input type="text" id="fname" placeholder="Enter your First Name" onblur="validate()"> <br>
+        <label><b>Last Name:</b></label><br>
+        <input type="text" id="lname" placeholder="Enter your Last Name"> <br>
+        <br>
+        <div class="wrapper1">  
+            <button id="next1" onclick="changePage1()">Next</button>              
+        </div>
+    </form>
+    <!--Others-->
+        <form name="form2" class="form" id="form2" method="get">
+            <div>
+                <label><b>Date of Birth:</b></label>
+                <input type="date" id="dob" placeholder="dd-mm-yyyy" onblur="validateDOB()"><br>
+                <span class="error" id="lblError"></span>
+            </div> <br>
+            <div>
+                <label><b>Gender:</b></label>
+                <input type="radio" value="male" name="gender">
+                <label for="male">Male</label>
+                <input type="radio" value="female"name="gender">
+                <label for="female">Female</label>
+                <input type="radio" value="others"name="gender">
+                <label for="others">Others</label><br>
+            </div><br>
+            <div>
+                <label><b>Address:</b></label><br>
+                <textarea name="address" rows="6" cols="15" placeholder="Enter the address"></textarea><br>
+            </div><br>
+            <div class="wrap">
+                <label><b>State:</b></label>
+                <select name="state" id="states">
+                    <option value="tn">Tamil Nadu</option>
+                    <option value="kl">Kerala</option>
+                    <option value="ap">Andra pradesh</option>
+                    <option value="ka">Karnataka</option>
+                    <option value="ma">Maharastra</option>
+                    <option value="ta">Telangana</option>
+                    <option value="up">Uttar Pradesh</option>
+                    <option value="hp">Himachal Pradesh</option>
+                </select><br>
+            </div> <br>
+            <div>
+                <label><b>Mobile Number:</b></label>
+                <input type="tel" id="phone" placeholder="Enter the Mobile Number" onblur="checkPhone()"><br>
+            </div> <br>
+            <div class="wrapper2">                
+                <button type="submit" id="back1">Prev</button>
+                <button type="submit" id="next2" onclick="changePage1()">Next</button>
+            </div>
+        </form> 
+    <!--Work-->  
+        <form name="form3" class="form" id="form3" method="get" action="#">
+            <div>
+                <label><b>Occupation:</b></label><br>
+                <input type="radio" id="government" name="government">
+                <label>Government</label><br>
+                <input type="radio" id="Private" name="private">
+                <label>Private</label><br>
+                <input type="radio" id="others" name="others">
+                <label>Others</label><br>
+            </div><br>
+            <div>
+                <label><b> Overall year of Experience: </b></label>
+                <input type="text" id="exp" name="experience" placeholder="Enter the experience">
+            </div><br>
+            <div class="wrapper3">                
+                <button type="submit" id="prev3">Prev</button>
+                <button type="submit" id="next3">Next</button>
+            
+            </div>
+        </form>
+    <!--Education-->
+        <form name="form4" class="form" id="form4" action="#" method="get"> 
+            <div>
+                <label><b>Graduation:</b></label><br>
+                <select name="graduation" id="graduation" >
+                    <option value="bsc">Bachelor of Science</option>
+                    <option value="btech">Bachelor of Technology</option>
+                    <option value="be">Bachelor of Engineering</option>
+                    <option value="arts&science">Arts & Science</option>
+                    <option value="commerce">Commerce</option>
+                    <option value="bba">Bachelor of Business Administration (BBA)</option>
+                    <option value="bj">Bachelor of Journalism (BJ)</option>
+                    <option value="bfa"> Bachelor of Fine Arts (BFA)</option>
+                    <option value="bba">Bachelor of Business Administration (BBA)</option>
+                    <option value="ba">Bachelor of Arts & Bachelor of Law (B.A. L.L.B.)</option>
+                    <option value="bca">Bachelor of Computer Application (BCA)</option>
+                    <option value="bhm"> Bachelor Of Hotel Management (BHM)</option>
+                </select>
+            </div><br>
+            <div>
+                <label><b>Year of Passing:</b></label>
+                <input type="month" id="passing" name="passing" placeholder="Enter the year of Passing">
+    
+            </div> <br>
+            <div class="wrapper4">                
+                <button type="submit" id="prev4">Prev</button>
+                <button type="submit" id="next4" onclick="changePage4()">Next</button>
+            </div>
+        </form>
+    <!--Team-->
+        <form name="form5" class="form" id="form5" action="#" method="get"> 
+            <div>
+                <label>Department:</label>
+                <select name="department" id="department">
+                    <option>Choose the option</option>
+                    <option value="lamp">LAMP</option>
+                    <option value="dotnet">Dot Net</option>
+                    <option value="oracle">Oracle</option>
+                    <option value="bfs">BFS</option>
+                    <option value="eba">EBA</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" id="check" name="check">
+                <label for="check"> I have agreed to the Terms & Conditions</label><br>
+            </div><br>
+            <div class="wrapper5">                
+                <button type="submit" id="prev5">Prev</button> 
+                <button id="next5" onclick="location.href='thanks.html'" type="button">Done</button>    
+            </div>
+        </form>
+        <div class="progress-bar">
+            <div id="progress"></div>
+            <div class="page-col"><small>Step 1</small></div>
+            <div class="page-col"><small>Step 2</small></div>
+            <div class="page-col"><small>Step 3</small></div>
+            <div class="page-col"><small>Step 4</small></div>
+            <div class="page-col"><small>Step 5</small></div>
+        </div>
+        </div>
+        <!-- </body> -->
+    <!--Thanks-->
+  
+</body>
+<script src="assignment.js"></script>
+</html>
