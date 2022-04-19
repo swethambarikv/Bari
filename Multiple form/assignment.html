@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Employee Registration</title>
+        <title>Employee Registration Form</title>
         <h1>EMPLOYEE REGISTRATION</h1>
-        <link rel="stylesheet" href="newform.css">
+        <link rel="stylesheet" href="multi_form.css">
+        
     </head>
     <body>
         <div class="container">
             
             <form id="Form1">
                 <h3>BASIC</h3>
-                <input type="text"  name="firstname" id="fname" placeholder="First name" maxlength="30" onblur="validateName()" required>
-                <input type="text"  name="lastname" id="lname" placeholder="Last name" maxlength="30" onblur="validateLname()">
+                <input type="text"  name="firstname" id="fname" placeholder="First name"  onblur="validateName()" required>
+                <input type="text"  name="lastname" id="lname" placeholder="Last name"  onblur="validateLname()">
                 <input type="text" id="mail" placeholder="Email ID" onblur="validateMail()" required>
                 <input type="password" id="password" placeholder="Password" onblur="validatePass()" required>
                 <input type="password" id="cfrmpass" placeholder="Confirm Password" onblur="validateConfirm()" required>
@@ -29,10 +30,29 @@
                 <input type="textarea" name="address" id="address">
                 <select id="state" name="state" onblur="validateState()" required>
                     <option value="Select a state">Select a state</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Andra Pradesh">Andra Pradesh</option>
+                    <option value="Telengana">Telengana</option>
+                    <option value="Karanataka">Karanataka</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="Himachal">Himachal Pradesh</option>
                     <option value="Delhi">Delhi</option>
                     <option value="Manipur">Manipur</option>
                     <option value="Mumbai">Mumbai</option>
                     <option value="Kolkata">Kolkata</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Haryana">Harayana</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Nagaland">Nagaland</option>
                 </select>
                 <input type="number"  name="phoneno" id="phonenum" placeholder="Phone number" max="10" onblur="validatePhone()" required>
                 
@@ -84,6 +104,10 @@
                     <option value="LAMP">LAMP</option>
                     <option value=".NET">.NET</option>
                     <option value="Oracle">ORACLE</option>
+                    <option value="BFS">BFS</option>
+                    <option value="EBA">EBA</option>
+                    <option value="IAS">IAS</option>
+                    <option value="Java">Java</option>
                 </select><br><br>
                 <input type="checkbox"  name="condition" id="tnc" value="check" onblur="validateCheck()">
                 <label for="tnc">I agree to the above mentioned terms and condition</label>
@@ -109,7 +133,7 @@
             </div>
 
          </div>
-
-         <script src="newform.js"></script>
+         <script src="multi_form.js"></script>
+         
     </body>
 </html>
