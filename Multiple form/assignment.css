@@ -1,112 +1,109 @@
-*{
-    margin: 0;
-    padding: 0;
+h1{
+    color: palegreen;
+    text-align: center;
 }
 body{
-    /* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(formBackground.jpg); */
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(college.jpg);
     background-position: center;
     background-size: cover;
 }
 .container{
-    width: 400px;
-    height: 580px;
+    width: 360px;
+    height: 550px;
     margin: 8% auto;
-    background: #fff;
+    background-color: white;
     border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    border:5px solid black;
+     position: relative; 
+     overflow: hidden;
 }
 h3{
-    margin-bottom: 5px;
     text-align: center;
-    color: #333;
+    margin-bottom: 40px;
 }
 .container form{
-    top: 50px;
-    left: 40px;
     width: 280px;
-    position: absolute;
+    position: absolute; 
+    top:100px;
+    left: 40px;
     transition: 0.5s;
 }
+select{
+    width:290px;
+}
+input[type="checkbox"]
+{
+    width: 20px;
+}
 form input{
+    width: 100%;
     padding: 10px 5px;
     margin: 5px 0;
     border: 0;
     border-bottom: 1px solid #999;
-    width: 100%;
     outline: none;
     background: transparent;
 }
-input[type=radio]{
-    width: 10%;
-}
-input[type=checkbox]{
-    width: 5%;
-}
-
-form textarea{
-    padding: 10px 5px;
-    margin: 5px 0;
-    border: 0;
-    border-bottom: 1px solid #999;
-    width: 100%;
-    outline: none;
-    background: transparent;
-}
-.btn{
+.btn-box{
+    margin: 30px;
     text-align: center;
-    width: 100%;
-    margin: 25px auto;
 }
 form button{
-    background-color:#34ebd8;
-    border-radius: 30px;
-    outline: none;
-    width: 110px;
+    width: 100px;
     height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right,pink,orange);
+    border-radius: 30px;
+    border: 0;
     cursor: pointer;
 }
-
-#form2,#form3,#form4,#form5{
-    left: 450px;
+#Form2,#Form3,#Form4,#Form5,#Form6{ 
+    left:450px;
 }
-.progress-bar{
-    margin: 0 auto;
+
+.step-row{
     width: 360px;
     height: 40px;
+    margin: 0 auto;
     display: flex;
-    box-shadow: 0 -px 5px -1px #000;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px black;
     position: relative;
 }
-.page-col{
-    width: 72px;
-    padding: 10px;
+.step-col{
+    width: 120px;
     text-align: center;
-    color: #333;
+    columns: grey;
     position: relative;
 }
 #progress{
-    width: 72px;
-    height: 100%;
     position: absolute;
-    background-color:#34ebd8;
+    height: 100%;
+    width: 40px;
+    background:linear-gradient(to right,pink,orange) ;
     transition: 1s;
 }
 #progress::after{
-    content:'';
-    width: 0;
-    height: 0;
-    position: absolute;
+    content: '';
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-    border-left: 20px solid #34ebd8;
-    right: -20px;
-    top: 0;
-}
-.centered {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+    right: -20px;
+    border-left: 20px solid orange;
+}
+.btn-box{
+    padding: 10px;
+    position: relative;
+}
+input[type="radio"]
+{
+    width: 20%;
+}
+.btn{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    border: gray;
+    cursor: pointer;
+    font-weight: bold;
+}
