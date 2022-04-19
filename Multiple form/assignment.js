@@ -5,6 +5,17 @@ var Form4 = document.getElementById("Form4");
 var Form5 = document.getElementById("Form5");
 var Form6 = document.getElementById("Form6");
 
+var Back1=document.getElementById("Back1");
+var Back2=document.getElementById("Back2");
+var Back3=document.getElementById("Back3");
+var Back4=document.getElementById("Back4");
+var Next1=document.getElementById("Next1");
+var Next2=document.getElementById("Next2");
+var Next3=document.getElementById("Next3");
+var Next4=document.getElementById("Next4");
+var Submit1=document.getElementById("Submit1");
+
+
 Back1.onclick = function(){
     Form1.style.left = "40px";
     Form2.style.left = "450px";
@@ -90,7 +101,11 @@ function validateName()
     var fname=document.getElementById("fname").value;
     var nameregex=/^[a-zA-Z]{3,15}$/;
 
-    if(!nameregex.test(fname))
+    if(fname=="")
+    {
+        alert("Enter the first name");
+    }
+    else if(!nameregex.test(fname))
     {
     alert("name should be in character");
     return false;
@@ -103,7 +118,7 @@ function validateName()
 
 function validateLname(){
     var lname=document.getElementById("lname").value;
-    var nameregex=/^[a-zA-Z]{3,15}$/;
+    var nameregex=/^[a-zA-Z]{0,15}$/;
         if(lname == "")
         {
             alert("enter the last name");
@@ -310,7 +325,6 @@ function pageChange5(){
     
 
 }
-
 
 
 
