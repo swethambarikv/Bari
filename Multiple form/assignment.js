@@ -1,8 +1,8 @@
-var step1 = document.getElementById("step1");
-var step2 = document.getElementById("step2");
-var step3 = document.getElementById("step3");
-var step4 = document.getElementById("step4");
-var step5 = document.getElementById("step5");
+var step1 = document.getElementById("form1");
+var step2 = document.getElementById("form2");
+var step3 = document.getElementById("form3");
+var step4 = document.getElementById("form4");
+var step5 = document.getElementById("form5");
 
 var next1 = document.getElementById("next1");
 var next2 = document.getElementById("next2");
@@ -16,45 +16,30 @@ var back4 = document.getElementById("back4");
 
 var progress = document.getElementById("progress");
 
-/*back1.onclick = function () {
-    form1.style.left = "40px";
-    form2.style.left = "450px";
-    progress.style.width = "72px";
 
-}*/
-
-back2.onclick = function () {
-    form2.style.left = "40px";
-    form3.style.left = "450px";
-    progress.style.width = "144px";
+function pageChange()
+{
+    if(pageOneCheck1==1 && pageOneCheck2==1 && pageOneCheck3==1 && pageOneCheck4==1 && pageOneCheck5==1 ){
+        next1.onclick=function(){
+    
+            form1.style.left="-450px";
+            form2.style.left="-40px";
+            progress.style.width="40px";
+        }
+    }
+    // else{
+    //     alert("Enter the details correctly!!");
+    // }
 }
 
-back3.onclick = function () {
-    form3.style.left = "40px";
-    form4.style.left = "450px";
-    progress.style.width = "216px";
-}
-next3.onclick = function () {
-    form3.style.left = "-450px";
-    form4.style.left = "40px";
-    progress.style.width = "288px";
-
-}
-
-back4.onclick = function () {
-    form4.style.left = "40px";
-    form5.style.left = "450px";
-    progress.style.width = "288px";
-}
-
-var mail = document.getElementById("mail");
-var password = document.getElementById("password");
-var confirmPassword = document.getElementById("confirmPassword");
+var email = document.getElementById("email");
+var pass = document.getElementById("pass1");
+var cPass = document.getElementById("pass2");
 var fname = document.getElementById("fname");
 var lname = document.getElementById("lname");
 
-var alphaNumericFormat = /([a-zA-Z0-9-_\.]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,5})(\.[a-zA-Z]{2,5})?$/;
-var alphaFormat = /^[a-zA-Z ]+$/;
+var alphaNumericFormat = "/([a-zA-Z0-9-_\.]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,5})(\.[a-zA-Z]{2,5})?$/";
+var alphaFormat = "/^[a-zA-Z ]+$/";
 
 var pageOneCheck1 = 0;
 var pageOneCheck2 = 0;
@@ -62,96 +47,163 @@ var pageOneCheck3 = 0;
 var pageOneCheck4 = 0;
 var pageOneCheck5 = 0;
 
+/*back1.onclick = function () {
+    form1.style.left = "40px";
+    form2.style.left = "450px";
+    progress.style.width = "72px";
 
+}*/
 
+// back2.onclick = function () {
+//     form2.style.left = "40px";
+//     form3.style.left = "450px";
+//     progress.style.width = "144px";
+// }
 
-var mail = document.getElementById("mail");
-var password = document.getElementById("password");
-var confirmPassword = document.getElementById("confirmPassword");
-var fname = document.getElementById("fname");
-var lname = document.getElementById("lname");
-               
-function validateEmail() {
+// back3.onclick = function () {
+//     form3.style.left = "40px";
+//     form4.style.left = "450px";
+//     progress.style.width = "216px";
+// }
+// next3.onclick = function () {
+//     form3.style.left = "-450px";
+//     form4.style.left = "40px";
+//     progress.style.width = "288px";
 
-    var emails = document.getElementById('email');
-    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+// }
 
-    if (!filter.test(emails.value)) {
-        alert('Please provide a valid email address');
-        emails.focus;
-        return false;
-    }
-}
-function validate() {
-    var regName = "/^[A-Za-z]+$/";
-    var name = document.getElementById('fname').value;
-    if (!regName.test(fname)) {
-        alert('Please enter your full name (first & last name).');
-        document.getElementById('fname').focus();
-        return false;
-    } else {
-        alert('Valid name given.');
-        return true;
-    }
-}
-function verifyPassword() {
-if (!password.value.length) {
-    document.getElementById("pass1").style.border = "2px solid red";
-    document.getElementById("pass").innerHTML = "This field is neccessary";
-    pageOneCheck4 = 0;
+// back4.onclick = function () {
+//     form4.style.left = "40px";
+//     form5.style.left = "450px";
+//     progress.style.width = "288px";
+// }
 
+/* EMAIL*/    
+function validateEmail()
+{
+    // var emails = document.getElementById('email');
+    var filter ="/^([a-zA-Z0-9_\.\-]){5,25}+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/";
+if(email==""){
+    alert("Email required");
+    pageOneCheck1=0;
     return false;
 }
-else {
-    document.getElementById("pass").innerHTML = " ";
-    document.getElementById("pass1").style.border = "2px solid green";
-    pageOneCheck4 = 1;
-
+    else if (!filter.match(email.value)) {
+        alert('Please provide a valid email address');
+        // emails.focus;
+        pageOneCheck1=0;
+        return false;
+    }
+    else{
+        pageOneCheck1=1;
+    }
 }
+/* NAME*/
+function validateName() {
+    var regName = "/^[A-Za-z]+$/";
+    // var name = document.getElementById('fname').value;
+    // if (regName.test(fname.value)==true) {
+    //     alert('Please enter your full name (first & last name).');
+    //     // document.getElementById('fname').focus();
+    //     return false;
+    // } else {
+    //     alert('Valid name given.');
+    //     return true;
+    // }
+    if(!regName.match(fname.value)){
+        alert("Only Alphabets are allowed");
+        return false;
+        pageOneCheck2=0;
+    }
+    else{
+        pageOneCheck2=1;
+    }
 }
-function matchPassword() {
+/* PASSWORD*/
+function verifyPassword() {
    
-    if (!confirmPassword.value.length) {
-        document.getElementById("pass2").style.border = "2px solid red";
-        document.getElementById("cpass").innerHTML = "Please Re-Enter the password";
-        pageOneCheck5 = 0;
-
+    var pass=document.getElementById("pass1").value;
+    if(pass==" "){
+        alert("Password Required");
         return false;
+        pageOneCheck4=0;
     }
-    else if (password.value != confirmPassword.value) {
-        document.getElementById("cpass").innerHTML = "Passwords did not match";
-        document.getElementById("pass2").style.border = "2px solid red";
-        pageOneCheck5 = 0;
-
-        return false;
-
-    }
-    else {
-        document.getElementById("cpass").innerHTML = " ";
-        document.getElementById("pass2").style.border = "2px solid green";
-        pageOneCheck5 = 1;
-
+    else{
+        pageOneCheck4=1;
     }
 }
-function changePage1() {
-    if (pageOneCheck1 == 1 && pageOneCheck2 == 1 && pageOneCheck3 == 1 && pageOneCheck4 == 1 && pageOneCheck5 == 1) {
-        next1.onclick = function () {
-            form1.style.left = "-450px";
-            form2.style.left = "40px";
-            progress.style.width = "144px";
-        }
+/*CONFIRM PASSWORD*/
+function matchPassword(){
+    var cpass=document.getElementById("pass2").value;
+    var pass=document.getElementById("pass1").value;
+    if(pass!=cpass){
+        alert("Password doesnt match.Re-enter");
+        return false;
+        pageOneCheck5=0;
     }
-    else {
-        alert("Please fill all the required details to move to the next step");
+    else{
+        pageOneCheck5=1;
     }
-
 }
+
+
+// function verifyPassword() {
+// if (!password.value.length) {
+//     document.getElementById("pass1").style.border = "2px solid red";
+//     document.getElementById("pass").innerHTML = "This field is neccessary";
+//     pageOneCheck4 = 0;
+
+//     return false;
+// }
+// else {
+//     document.getElementById("pass").innerHTML = " ";
+//     document.getElementById("pass1").style.border = "2px solid green";
+//     pageOneCheck4 = 1;
+
+// }
+// }
+
+    // if (confirmPassword.value.length==true) {
+    //     document.getElementById("pass2").style.border = "2px solid red";
+    //     document.getElementById("cpass").innerHTML = "Please Re-Enter the password";
+    //     pageOneCheck5 = 0;
+
+    //     return false;
+    // }
+    // else if (password.value != confirmPassword.value) {
+    //     document.getElementById("cpass").innerHTML = "Passwords did not match";
+    //     document.getElementById("pass2").style.border = "2px solid red";
+    //     pageOneCheck5 = 0;
+
+    //     return false;
+
+    // }
+    // else {
+    //     document.getElementById("cpass").innerHTML = " ";
+    //     document.getElementById("pass2").style.border = "2px solid green";
+    //     pageOneCheck5 = 1;
+
+    // }
+
+// function changePage1() {
+//     if (pageOneCheck1 == 1 && pageOneCheck2 == 1 && pageOneCheck3 == 1 && pageOneCheck4 == 1 && pageOneCheck5 == 1) {
+//         next1.onclick = function () {
+//             form1.style.left = "-450px";
+//             form2.style.left = "40px";
+//             progress.style.width = "144px";
+//         }
+//     }
+//     else {
+//         alert("Please fill all the required details to move to the next step");
+//     }
+
+// }
 function validateDOB() {
     var lblError = document.getElementById("lblError");
 
     //Get the date from the TextBox.
     var dateString = document.getElementById("dob").value;
-    var regex = /(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$/;
+    var regex = "/(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$/";
 
     //Check whether valid dd/MM/yyyy Date Format.
     if (regex.test(dateString)) {
@@ -207,5 +259,13 @@ function changePage() {
         f.classList.add('active');
     })
 }
+
+
+
+
+
+
+
+
 
 
