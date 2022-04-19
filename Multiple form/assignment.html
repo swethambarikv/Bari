@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Registeration</title>
-    <link rel="stylesheet" type="text/css" href="assignment.css">
+    <link rel="stylesheet" type="text/css" href="assignment1.css">
 </head>
 <body>
     <header><h1>Employee Registeration Form</h1></header>
     <div class="container">
     <!--Basics-->
-    <form class="form active" name="form1" id="form1" >
+    <!-- <form class="form active" name="form1" id="form1" > -->
+        <form id="form1">
        
         <label><b>Email:</b></label><br>
         <input type="text" id="email" name="email" placeholder="Eg:abc@gmail.com" onblur="validateEmail()"><br>
@@ -20,16 +21,17 @@
         <label><b>Conform Password:</b></label><br>
         <input type="password" id="pass2" placeholder="Re-Enter Password" onblur="matchPassword()"><div id="cpass"><br>
         <label><b>First Name:</b></label><br>
-        <input type="text" id="fname" placeholder="Enter your First Name" onblur="validate()"> <br>
+        <input type="text" id="fname" placeholder="Enter your First Name" onblur="validateName()"> <br>
         <label><b>Last Name:</b></label><br>
         <input type="text" id="lname" placeholder="Enter your Last Name"> <br>
         <br>
         <div class="wrapper1">  
-            <button id="next1" onclick="changePage1()">Next</button>              
+            <button  type= "button" id="next1" onclick="pageChange()">Next</button>              
         </div>
     </form>
     <!--Others-->
-        <form name="form2" class="form" id="form2" method="get">
+        <!-- <form name="form2" class="form" id="form2" method="get"> -->
+            <form id="form2">
             <div>
                 <label><b>Date of Birth:</b></label>
                 <input type="date" id="dob" placeholder="dd-mm-yyyy" onblur="validateDOB()"><br>
@@ -66,12 +68,13 @@
                 <input type="tel" id="phone" placeholder="Enter the Mobile Number" onblur="checkPhone()"><br>
             </div> <br>
             <div class="wrapper2">                
-                <button type="submit" id="back1">Prev</button>
-                <button type="submit" id="next2" onclick="changePage1()">Next</button>
+                <button type="button" id="back1">Prev</button>
+                <button type="button" id="next2" onclick="changePage1()">Next</button>
             </div>
         </form> 
     <!--Work-->  
-        <form name="form3" class="form" id="form3" method="get" action="#">
+        <!-- <form name="form3" class="form" id="form3" method="get" action="#"> -->
+            <form id="form3">
             <div>
                 <label><b>Occupation:</b></label><br>
                 <input type="radio" id="government" name="government">
@@ -86,13 +89,15 @@
                 <input type="text" id="exp" name="experience" placeholder="Enter the experience">
             </div><br>
             <div class="wrapper3">                
-                <button type="submit" id="prev3">Prev</button>
-                <button type="submit" id="next3">Next</button>
+                <button type="button" id="prev3">Prev</button>
+                <button type="button" id="next3">Next</button>
             
             </div>
         </form>
     <!--Education-->
-        <form name="form4" class="form" id="form4" action="#" method="get"> 
+        <!-- <form name="form4" class="form" id="form4" action="#" method="get">  -->
+            <form id="form4">
+                
             <div>
                 <label><b>Graduation:</b></label><br>
                 <select name="graduation" id="graduation" >
@@ -116,12 +121,13 @@
     
             </div> <br>
             <div class="wrapper4">                
-                <button type="submit" id="prev4">Prev</button>
-                <button type="submit" id="next4" onclick="changePage4()">Next</button>
+                <button type="button" id="prev4">Prev</button>
+                <button type="button" id="next4" onclick="changePage4()">Next</button>
             </div>
         </form>
     <!--Team-->
-        <form name="form5" class="form" id="form5" action="#" method="get"> 
+        <!-- <form name="form5" class="form" id="form5" action="#" method="get">  -->
+            <form id="form5">
             <div>
                 <label>Department:</label>
                 <select name="department" id="department">
@@ -138,8 +144,8 @@
                 <label for="check"> I have agreed to the Terms & Conditions</label><br>
             </div><br>
             <div class="wrapper5">                
-                <button type="submit" id="prev5">Prev</button> 
-                <button id="next5" onclick="location.href='thanks.html'" type="button">Done</button>    
+                <button type="button" id="prev5">Prev</button> 
+                <button  type="button" id="next5" onclick="location.href='thanks.html'" type="button">Done</button>    
             </div>
         </form>
         <div class="progress-bar">
@@ -153,7 +159,7 @@
         </div>
         <!-- </body> -->
     <!--Thanks-->
-  
+    <script src="assignment1.js"></script>
+
 </body>
-<script src="assignment.js"></script>
 </html>
