@@ -3,18 +3,19 @@
     padding: 0;
 }
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(formBackground.jpg);
+    /* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(formBackground.jpg); */
     background-position: center;
     background-size: cover;
 }
 .container{
-    width: 360px;
-    height: 480px;
+    width: 400px;
+    height: 580px;
     margin: 8% auto;
     background: #fff;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
+    border:5px solid black;
 }
 h3{
     margin-bottom: 5px;
